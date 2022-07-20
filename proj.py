@@ -73,6 +73,8 @@ clients=[]
 books=[]
 borrwed_orders=[]
 librarians=[]
+total_avalible_books=0
+total_borrowed_orders=0
 
 n=int(input('''
 Please Enter the number of the transaction you would like to make:
@@ -95,8 +97,8 @@ if n==1 :
     for i in range(0,e):
         clients.append(Client(input("Enter full name :"), int(input("Enter your age:")), int(input("Enter your id: ")),
                               int(input("Enter your phone number: "))))
-        if e != 1:
-            print("Next clinet :")
+
+
     for s in clients:
         print((s.display()))
 
